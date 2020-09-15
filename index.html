@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta name="naver-site-verification" content="64885265f0abcd92bab066e9d32db827a71315e0" />
 
+		<meta property="og:url" content="https://stockbutler.ga/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="주식집사" />
+		<meta property="og:description" content="주식에 얼마를 투자해야할지 모르겠습니까? 제가 무료로 도와드리겠습니다, 회장님." />
+		<meta property="og:image" content="" />
+		
+		
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -14,6 +21,8 @@
 			crossorigin="anonymous"
 		/>
 
+		<link rel="canonical" href="https://stockbutler.ga/">
+		
 		<title>주식집사</title>
 		<link rel="stylesheet" href="style.css" />
 
@@ -196,7 +205,7 @@
 			const cal2 = () => {
 				const res = res1();
 				const price = parseInt(value3.value.replace(/,/g, ''));
-				const total = res / price;
+				const total = Math.round(res / price);
 				result.innerText = ` ${new Intl.NumberFormat('de-DE').format(
 					total
 				)}주 매수 가능합니다.`;
