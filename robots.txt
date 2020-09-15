@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: stockbutler.netlify.app/sitemap.xml
